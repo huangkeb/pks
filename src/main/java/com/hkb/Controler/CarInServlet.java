@@ -17,7 +17,6 @@ public class CarInServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("utf-8");
         String carno = request.getParameter("carno");
-        System.out.println(carno);
         CheckInDao checkInDao = new CheckInDao();
         ArrayList<Park> exist = null;
         ArrayList<Park> emptyList = null;
@@ -28,9 +27,11 @@ public class CarInServlet extends HttpServlet {
                 if(emptyList.isEmpty()){//是否有空车位，若为空表示满
                     response.getWriter().print("full");
                 }
+                else{
+                    response.getWriter().print("true");
+                }
             }
             else{
-                System.out.println("经过了这里！");
                 response.getWriter().print("exist");
             }
         } catch (SQLException e) {
