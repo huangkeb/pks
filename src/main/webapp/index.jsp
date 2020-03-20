@@ -22,7 +22,7 @@
         <a href="State" class="button" id="button3">空位查询</a>
     </div>
     <div class="div2">
-        <a href="Controler?action=recond" class="button" id="button4">停车记录查询</a>
+        <a href="Skip?action=recond" class="button" id="button4">停车记录查询</a>
         <a href="Controler?action=admin" class="button" id="button5">停车数据统计</a>
     </div>
 </div>

@@ -39,7 +39,7 @@ a:hover{
     width:70%;
     font-size: 30px;
     margin-left: 10%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .carno{
     border-radius: 0.7em;
@@ -51,26 +51,23 @@ a:hover{
     width: 40%;
     color:#7f0000;
 }
-.option{
-    display: none;
-}
-.div2{
-    display: inline-block;
+
+#error_message{
     position: absolute;
-    left:26.5%;
-    top:53%;
-    font-size:30px;
-    line-height: 100px;
+    top:260px;
+    right:270px;
+    color:#7f0000;
+    font-size: 30px;
 }
-.div{
-    margin-top: 2.5%;
-    font-size: 25px;
-    line-height: 50px;
-    margin-right: 20px;
-}
-.tips{
-	color:#7F0000;
-	position:absolute;
-	right:18%;
-	top:33%;
+
+#loading{
+    visibility: hidden;
+    position: absolute;
+    z-index: 997;
+    width: 99.9%;
+    height: 99.9%;
+    opacity: 0.2;
+    top:0;
+    right: 0;
+    background: #000;
 }
