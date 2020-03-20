@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/jsp/state.jsp")
+@WebFilter(urlPatterns = {"/jsp/state.jsp","/jsp/result.jsp","/jsp/pay.jsp"})
 public class StateFilter implements Filter {
     public void destroy() {
     }

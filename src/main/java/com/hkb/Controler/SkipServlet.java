@@ -21,5 +21,8 @@ public class SkipServlet extends HttpServlet {
         else if(action.equals("index")){
             response.sendRedirect("index.jsp");
         }
+        else if(action.equals("out")){
+            response.sendRedirect("jsp/out.jsp");
+        }
     }
 }

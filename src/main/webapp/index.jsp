@@ -18,7 +18,7 @@
 <div class="buttondiv">
     <div class="div1">
         <a href="Skip?action=in" class="button" id="button1">车辆入库</a>
-        <a href="Controler?action=out" class="button" id="button2">收费管理</a>
+        <a href="Skip?action=out" class="button" id="button2">收费管理</a>
         <a href="State" class="button" id="button3">空位查询</a>
     </div>
     <div class="div2">
