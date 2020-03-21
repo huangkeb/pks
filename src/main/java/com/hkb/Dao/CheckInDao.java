@@ -26,7 +26,7 @@ public class CheckInDao extends BaseDao{
 
     public ArrayList<Park> ifexistCno(String Cno) throws SQLException {//检测入库时是否已存在
         ArrayList<Park>ParkList = new ArrayList<Park>();
-        String sql = "SELECT * FROM Park WHERE Carno = ?";
+        String sql = "SELECT * FROM park WHERE Carno = ?";
         Connection conn = dataSource.getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1,Cno);

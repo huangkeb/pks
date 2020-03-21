@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class InDao extends BaseDao{
     public boolean updatepark(Park park){
-        String sql = "UPDATE Park SET Carno=?,Cartype=?,Intime=? WHERE Parkno = ?";
+        String sql = "UPDATE park SET Carno=?,Cartype=?,Intime=? WHERE Parkno = ?";
         try(
                 Connection conn = dataSource.getConnection();
                 PreparedStatement pstmt = conn.prepareStatement(sql)){

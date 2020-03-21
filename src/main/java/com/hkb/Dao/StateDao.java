@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class StateDao extends BaseDao{
     public ArrayList<Park> getParkState() throws SQLException {
         ArrayList<Park>stateList = new ArrayList<Park>();
-        String sql = "SELECT * FROM Park";
+        String sql = "SELECT * FROM park";
         Connection conn = dataSource.getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rst = pstmt.executeQuery();

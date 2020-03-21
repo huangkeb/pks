@@ -8,8 +8,8 @@ import java.sql.SQLException;
 
 public class OutDao extends BaseDao{//数据库事务，确保车辆出库、保存记录两件事全部正确或全部错误
     public boolean carOut(Recond recond,String Cno){
-        String sql1 = "INSERT INTO Recond VALUES(?,?,?,?,?,?,?)";
-        String sql2 = "UPDATE Park SET Carno=NULL,Cartype=NULL,Intime=NULL WHERE Carno = ?";
+        String sql1 = "INSERT INTO recond VALUES(?,?,?,?,?,?,?)";
+        String sql2 = "UPDATE park SET Carno=NULL,Cartype=NULL,Intime=NULL WHERE Carno = ?";
         Connection conn = null;
         try {
             conn = dataSource.getConnection();

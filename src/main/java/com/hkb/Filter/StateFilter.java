@@ -1,7 +1,5 @@
 package com.hkb.Filter;
 
-import com.hkb.Util.Constant;
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/jsp/state.jsp","/jsp/result.jsp","/jsp/pay.jsp"})
+@WebFilter(urlPatterns = {"/jsp/state.jsp","/jsp/result.jsp","/jsp/pay.jsp","/jsp/display.jsp"})
 public class StateFilter implements Filter {
     public void destroy() {
     }
