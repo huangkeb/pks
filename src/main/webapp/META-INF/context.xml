@@ -6,9 +6,9 @@
             maxActive="100"
             maxIdle="2"
             username="root"
-            maxWait="5000"
+            maxWait="100"
             driverClassName="com.mysql.jdbc.Driver"
             password="123456"
-            url="jdbc:mysql://localhost:3306/pks?useUnicode=true&amp;characterEncoding=UTF-8"
+            url="jdbc:mysql://localhost:3306/pks?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
     />
 </Context>

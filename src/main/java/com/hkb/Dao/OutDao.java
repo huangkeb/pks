@@ -26,7 +26,7 @@ public class OutDao extends BaseDao{//数据库事务，确保车辆出库、保
             PreparedStatement pstmt2 = conn.prepareStatement(sql2);
             pstmt2.setString(1, Cno);
             pstmt2.executeUpdate();
-            conn.setAutoCommit(true);
+            conn.commit();
             conn.close();
         } catch (SQLException e) {
             try {
